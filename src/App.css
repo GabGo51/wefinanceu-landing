@@ -13,6 +13,7 @@ img{
   padding-bottom: 0;
   height: 100vh;
   overflow-y: hidden;
+  overflow-x: hidden;
   
   
 }
@@ -48,8 +49,9 @@ img{
   justify-content: center;
   align-items: center;
   width: 100%;
+  transform: translateX(2%);
   
 }
 .desktop {
-  width: clamp(400px, 80%, 1200px);
+  width: clamp(340px, 80%, 1200px);
 }

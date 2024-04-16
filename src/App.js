@@ -1,6 +1,6 @@
 import "./App.css";
 import { motion } from "framer-motion";
-import hero from "./img/hero5.png";
+import hero from "./img/hero.png";
 import logo from './img/blueLogo.PNG'
 
 function App() {

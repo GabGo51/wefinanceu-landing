@@ -11,11 +11,13 @@ img{
   justify-content: space-between;
   align-items: center;
   padding-bottom: 0;
-  height: 100vh;
+  max-height: 100svh;
   overflow-y: hidden;
   overflow-x: hidden;
-  
-  
+}
+
+.section{
+  flex: 1;
 }
 
 .App-header {
@@ -55,3 +57,10 @@ img{
 .desktop {
   width: clamp(340px, 80%, 1200px);
 }
+
+@media (max-width:800px){
+  button{
+    margin-bottom: 50px;
+  }
+}
+

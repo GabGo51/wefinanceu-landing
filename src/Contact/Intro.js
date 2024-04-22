@@ -65,7 +65,8 @@ div{
   }
 }
 @media (max-width:950px){
-    width: 100%;
+    width: calc(100% - 40px);
+    margin-bottom: 40px;
   }
 `;
 

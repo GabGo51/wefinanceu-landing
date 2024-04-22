@@ -13,6 +13,18 @@ code {
     monospace;
 }
 
+html, body {
+  width: 100vw;
+  overflow: hidden;
+  box-sizing: content-box;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+html{
+  overflow-y: scroll;
+  min-height: 100svh;
+}
+
 h1 , h2 , h3  {
   font-family: 'Inter', sans-serif;
   

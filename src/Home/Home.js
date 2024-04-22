@@ -29,7 +29,7 @@ const Home = () => {
         >
           Commercial Real Estate Financing, Simplified.
         </motion.h1>
-        <button onClick={() => handleNavigate("/contact")}>Contact us</button>
+        <button className="try-button" onClick={() => handleNavigate("/contact")}>Contact us</button>
       </section> 
       <footer className="section frame">
         <motion.img initial={{scaleY:0.9, y: 20, opacity: 0 }}

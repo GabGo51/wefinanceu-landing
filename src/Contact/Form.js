@@ -112,15 +112,15 @@ const Container = styled(motion.div)`
   
 
   form {
+    
     padding: 20px;
-    padding-right: 25px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 20px;
     width: clamp(280px, 80%, 500px);
     background-color: white;
 
     @media (max-width: 950px) {
-    width: 100%;
+    width: calc(100% - 40px);
   }
 
     div {
@@ -141,7 +141,7 @@ const Container = styled(motion.div)`
         border: 1px solid rgba(0, 0, 0, 0.3);
         box-shadow: rgba(100, 100, 111, 0.2) 0px 1px 5px 0px;
         outline: none;
-        width: 99%;
+        width: 98%;
         font-size: 14px;
         font-family: 'Montserrat', sans-serif;
 

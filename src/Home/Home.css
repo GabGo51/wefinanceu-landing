@@ -3,17 +3,27 @@ img{
   object-fit: cover;
 }
 .App {
+  max-height: 100vh;
   text-align: center;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
   align-items: center;
-  padding-bottom: 0;
-  max-height: 100svh;
   overflow-y: hidden;
   overflow-x: hidden;
+
+  @media (max-width:950px){
+    min-height: 100vh;
+  
+    button{
+      margin-bottom: 20px;
+    }
+  
+    
+  }
 }
 
 .section{
@@ -35,6 +45,10 @@ img{
 .App-main {
   max-width: 1200px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .title {
@@ -55,12 +69,33 @@ img{
   
 }
 .desktop {
-  width: clamp(340px, 80%, 1200px);
+  width: clamp(340px, 80%, 1000px);
 }
 
-@media (max-width:800px){
-  button{
-    margin-bottom: 50px;
+.try-button {
+  transition: 500ms;
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  background: #00cf9d;
+  box-shadow: 2px 2px 10.3px 0px rgba(107, 240, 192, 0.5);
+  color: #fff;
+  border: 2px solid #00cf9d;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+
+  &:hover {
+    background-color: transparent;
+    color: #00cf9d;
   }
 }
+
+
 

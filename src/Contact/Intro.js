@@ -3,6 +3,7 @@ import styled from "styled-components";
 import text from './text/introText'
 import { motion } from "framer-motion";
 import animations from "../animation";
+import checkmark from './img/chekmark.png'
 
 const Intro = () => {
 
@@ -21,17 +22,17 @@ const Intro = () => {
       </motion.p>
       <motion.div {...animations.fadeInFromLeft}
             transition={{ duration: 1, delay: 0.4 }}>
-      <i className="fa-solid fa-check"></i>
+      <img alt="icon" src={checkmark}/>
       <p> Get advice from a sales expert who will understand your business needs</p>
       </motion.div>
       <motion.div {...animations.fadeInFromLeft}
             transition={{ duration: 1, delay: 0.5 }}>
-      <i className="fa-solid fa-check"></i>
+      <img alt="icon" src={checkmark}/>
       <p> Understand how to best use WeFinanceU</p>
       </motion.div>
       <motion.div {...animations.fadeInFromLeft}
             transition={{ duration: 1, delay: 0.6 }}>
-      <i className="fa-solid fa-check"></i>
+      <img alt="icon" src={checkmark}/>
       <p> Learn more about how to scale your business</p>
       </motion.div>
     </Container>
@@ -41,6 +42,7 @@ const Intro = () => {
 const Container = styled.div`
 width: 65%;
 color: white;
+margin: 0 20px;
 
 h1{
   margin-bottom: 40px;
@@ -59,9 +61,11 @@ div{
   align-items: center;
   margin: 20px 0;
 
-  i{
+  img{
+    margin: 10px 0; 
     margin-right: 20px;
-    color: #00cf9d;
+    filter: invert(73%) sepia(40%) saturate(6032%) hue-rotate(122deg) brightness(96%) contrast(101%);
+    width: 20px;
   }
 }
 @media (max-width:950px){

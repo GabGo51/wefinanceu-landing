@@ -14,26 +14,25 @@ const Intro = () => {
             transition={{ duration: 1, delay: 0.1 }}>{text.title[true]}</motion.h1>
       <motion.p {...animations.fadeInFromLeft}
             transition={{ duration: 1, delay: 0.3 }}>
-        Ready to revolutionize your sales process? We’d love to show you what
-        Pipedrive can do – contact our sales experts and discover how Pipedrive
-        can help improve your team's performance. Simply fill out the form to
-        the right, and a member of our team will contact you as soon as
+        Ready to revolutionize your financing process? We’d love to show you what
+        WeFinanceU can do – contact our sales experts and discover how WeFinanceU
+        can help you save time and money! Simply fill out the form, and a member of our team will contact you as soon as
         possible.
       </motion.p>
       <motion.div {...animations.fadeInFromLeft}
             transition={{ duration: 1, delay: 0.4 }}>
       <img alt="icon" src={checkmark}/>
-      <p> Get advice from a sales expert who will understand your business needs</p>
+      <p> Get advice from a financing expert who will understand your personal needs.</p>
       </motion.div>
       <motion.div {...animations.fadeInFromLeft}
             transition={{ duration: 1, delay: 0.5 }}>
       <img alt="icon" src={checkmark}/>
-      <p> Understand how to best use WeFinanceU</p>
+      <p> Understand how to best use WeFinanceU.</p>
       </motion.div>
       <motion.div {...animations.fadeInFromLeft}
             transition={{ duration: 1, delay: 0.6 }}>
       <img alt="icon" src={checkmark}/>
-      <p> Learn more about how to scale your business</p>
+      <p> Learn more about how to optimize your financing process. </p>
       </motion.div>
     </Container>
   );

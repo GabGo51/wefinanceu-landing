@@ -1,6 +1,6 @@
 import "./Home.css";
 import { motion } from "framer-motion";
-import hero from "../img/hero.png";
+import hero from "../img/hero.webp";
 import logo from "../img/blueLogo.PNG";
 import { useNavigate } from "react-router-dom";
 

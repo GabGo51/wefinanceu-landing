@@ -1,9 +1,9 @@
 
 img{
-  object-fit: cover;
+  object-fit: contain;
 }
 .App {
-  max-height: 100vh;
+  height: 100vh;
   text-align: center;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
@@ -26,9 +26,11 @@ img{
   }
 }
 
-.section{
+.App > * {
   flex: 1;
 }
+
+
 
 .App-header {
   display: flex;
@@ -41,6 +43,7 @@ img{
 
 .logo {
   width: clamp(300px, 50%, 300px);
+  margin-top: 50px;
 }
 
 .App-main {
@@ -58,9 +61,10 @@ img{
 .title {
   margin-bottom: 25px;
   font-size: clamp(24px, 5vw, 56px);
+  max-width: 1000px;
   font-family: Inter, sans-serif;
   color: #035c84;
-  margin-bottom: 40px;
+  margin: 5vh 20px;
 }
 
 .frame {
@@ -69,11 +73,12 @@ img{
   justify-content: center;
   align-items: center;
   width: 100%;
-  transform: translateX(2%);
+  transform: translateX(3%);
   
 }
 .desktop {
   width: clamp(340px, 80%, 1000px);
+  transform: translateX(2%)!important;
 }
 
 .try-button {
@@ -94,6 +99,7 @@ img{
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
+  margin: 2vh 0;
 
   &:hover {
     background-color: transparent;

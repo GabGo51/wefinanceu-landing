@@ -30,7 +30,8 @@ display: flex;
 flex-direction: column;
 align-items: center;
 max-width: 100vw;
-min-height: 100vh;
+min-height: calc(100vh - 40px);
+padding-bottom: 40px;
 
 img{
   width: clamp(300px, 50%, 320px);

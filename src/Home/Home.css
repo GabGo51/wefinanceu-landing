@@ -1,5 +1,4 @@
-
-img{
+img {
   object-fit: contain;
 }
 .App {
@@ -10,19 +9,17 @@ img{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
+
   align-items: center;
   overflow-y: hidden;
   overflow-x: hidden;
 
-  @media (max-width:950px){
+  @media (max-width: 950px) {
     min-height: 100vh;
-  
-    button{
+
+    button {
       margin-bottom: 20px;
     }
-  
-    
   }
 }
 
@@ -30,14 +27,12 @@ img{
   flex: 1;
 }
 
-
-
 .App-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 50px 0 ;
+  margin: 20px 0;
   margin-bottom: 0;
 }
 
@@ -53,18 +48,15 @@ img{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
-
-
 
 .title {
   margin-bottom: 25px;
-  font-size: clamp(24px, 5vw, 56px);
+  font-size: clamp(24px, 5vw, 46px);
   max-width: 1000px;
   font-family: Inter, sans-serif;
   color: #035c84;
-  margin: 5vh 20px;
+  margin: 3vh 20px;
 }
 
 .frame {
@@ -74,11 +66,10 @@ img{
   align-items: center;
   width: 100%;
   transform: translateX(3%);
-  
 }
 .desktop {
   width: clamp(340px, 80%, 1000px);
-  transform: translateX(2%)!important;
+  transform: translateX(2%) !important;
 }
 
 .try-button {
@@ -107,5 +98,19 @@ img{
   }
 }
 
+@media screen and (max-width: 900px) {
+  .App {
+    justify-content: start;
+    gap: 4vh;
+  }
+  .App > * {
+    flex: 0;
+  }
+}
 
-
+@media screen and (max-height: 750px) {
+  .App {
+    overflow-y: scroll;
+  }
+  
+}

@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import hero from "../img/hero.webp";
 import logo from "../img/blueLogo.PNG";
 import { useNavigate } from "react-router-dom";
+import animations from '../animation'
+import TryButton from "./TryButton";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -31,16 +33,12 @@ const Home = () => {
       >
         Commercial Real Estate Financing, Simplified.
       </motion.h1>
-      <div><motion.button
-        initial={{ y: -20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1, delay: 0.7 }}
-        className="try-button"
-        onClick={() => handleNavigate("/contact")}
-      >
-        Contact us
-      </motion.button></div>
-      
+      <div>
+        <TryButton
+          onClick={() => handleNavigate("/contact")}
+          animation={animations.fadeInFromUp}
+        />
+      </div>
 
       <motion.img
         initial={{ scaleY: 0.9, y: 20, opacity: 0 }}

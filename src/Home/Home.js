@@ -10,6 +10,7 @@ const Home = () => {
   const navigate = useNavigate();
   const handleNavigate = (page) => {
     navigate(page);
+    console.log('hi');
     window.scrollTo({
       top: 0,
     });
@@ -33,7 +34,7 @@ const Home = () => {
       >
         Commercial Real Estate Financing, Simplified.
       </motion.h1>
-      <div>
+      <div onClick={() => handleNavigate("/contact")}>
         <TryButton
           onClick={() => handleNavigate("/contact")}
           animation={animations.fadeInFromUp}

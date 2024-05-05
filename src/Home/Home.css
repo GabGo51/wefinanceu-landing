@@ -73,6 +73,7 @@ img {
 }
 
 .try-button {
+  cursor: pointer;
   transition: 500ms;
   width: 150px;
   height: 50px;
